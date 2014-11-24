@@ -1,3 +1,4 @@
+# Friend of Friend GraphData
 Tugas SMBD Ilmu Komputer Pascasarjana UGM Mengenai GraphData menggunakan Neo4j
 
 # Dependencies
@@ -18,11 +19,25 @@ download neo4j server :
 # Develop from
 this project was develop from git@github.com:aseemk/node-neo4j-template.git
 
-# installing :
+# Installing :
 ```
 git clone git@github.com:pwcahyo/graphdata-bootstrap-nodejs-neo4j.git
 cd graphdata-bootstrap-nodejs-neo4j
 node app.js
 ```
+
+# Running neo4j server:
+``
+neo4j-community-2.1.5/bin/./neo4j start
+``
+# Running Chyper
+``
+http://localhost:7474
+``
+# Running this application
+``
+http://localhost:3000
+``
+
 
 and happy coding
