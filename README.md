@@ -2,8 +2,8 @@
 Tugas SMBD Ilmu Komputer Pascasarjana UGM Mengenai GraphData menggunakan Neo4j
 
 # Dependencies
+This project contain some library and was installed except neo4j server, library was installed such as :
 ```
-This project contain some library and was installed except neo4j server, such as :
 [Node.js]: http://nodejs.org/
 [node-neo4j]: https://github.com/thingdom/node-neo4j
 [bootstrap]: http://getbootstrap.com/
