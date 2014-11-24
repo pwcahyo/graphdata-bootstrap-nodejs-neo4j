@@ -1,0 +1,55 @@
+extends layout
+
+block body
+    h1 #{user.name}
+
+    p
+        a(href='/users/list') Back to everyone
+
+    if following.length
+        p #{user.name} is following #{following.length} users:
+        // TODO should say 'user' if only one! ;)
+        ul.users
+            for other in following
+                li.user
+                    form(action='/users/#{user.id}/unfollow', method='POST')
+                        a(href='/users/#{other.id}') #{other.name}
+                        input(type='hidden', name='user[id]', value='#{other.id}')
+                        input(type='submit', class='unfollow', value='x')
+    else
+        p #{user.name} isn't following anyone currently.
+
+    if others.length
+        form(action='/users/#{user.id}/follow', method='POST')
+            p Add someone for #{user.name} to follow:
+            label
+                select(name='user[id]', required)
+                    option(value='')
+                    for user in others
+                        option(value='#{user.id}') #{user.name}
+            button.save.btn.btn-warning(type='submit') Follow
+            p
+    else
+        p There's no one else left for #{user.name} to follow!
+
+    form.add.form-inline(action='/users/#{user.id}', method='POST')
+      input.form-control(
+          placeholder='#{user.name}',
+          required=true,
+          name='name',
+          type='text',
+          value='')
+      button.save.btn.btn-primary(type='submit') Update
+      p
+    form.delete.form-inline(action='/users/#{user.id}', method='POST', onsubmit='return confirm("Are you sure delete #{user.name} ?");')
+      input.form-control(
+          placeholder='#{user.name}',
+          required=true,
+          name='_method',
+          type='hidden',
+          value='DELETE')
+      button.save.btn.btn-danger(type='submit') Delete #{user.name}
+
+    
+
+    

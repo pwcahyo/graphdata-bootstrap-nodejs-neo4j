@@ -1,0 +1,52 @@
+extends layout
+
+block body
+    //h1 Users
+    <!--
+    if users.length
+        p Here are the current users:
+        ul.users
+            for user in users
+                li.user
+                    a(href='/users/#{user.id}') #{user.name}
+    else
+        p There are no users currently.
+    <![endif]-->
+
+    
+    //form(action='', method='POST')
+    //    p Create a new user:
+    //    input(type='text', name='name', placeholder='Name', required)
+    //    input(type='submit', value='Create')
+    div.page-header
+        h1 Add Profile
+
+    form.form-horizontal(method='post', role='form', action='/users')
+        div.form-group
+          label.col-sm-4 Name
+          div.col-sm-8
+            input.form-control(
+              placeholder='Name',
+              required=true,
+              name='name',
+              type='text',
+              value='')
+        div.form-group
+          label.col-sm-4 Date of Birth
+          div.col-sm-4 
+            input.form-control(
+              placeholder='Place',
+              required=true,
+              name='place',
+              type='text',
+              value='')
+          div.col-sm-4
+            input.form-control(
+              placeholder='Date',
+              required=true,
+              name='date',
+              type='text',
+              value='')
+        div.form-group
+          div.col-sm-offset-4.col-sm-8
+            button.login.btn.btn-primary(type='submit') Save

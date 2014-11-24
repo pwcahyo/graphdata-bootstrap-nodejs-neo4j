@@ -1,0 +1,138 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'twitter-bootstrap-node' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'twitter-bootstrap-node', null ]
+5 verbose cache add name=undefined spec="twitter-bootstrap-node" args=["twitter-bootstrap-node",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'twitter-bootstrap-node',
+6 verbose parsed url   path: 'twitter-bootstrap-node',
+6 verbose parsed url   href: 'twitter-bootstrap-node' }
+7 silly lockFile 48703a83-twitter-bootstrap-node twitter-bootstrap-node
+8 verbose lock twitter-bootstrap-node /home/insomniart/.npm/48703a83-twitter-bootstrap-node.lock
+9 silly lockFile 48703a83-twitter-bootstrap-node twitter-bootstrap-node
+10 silly lockFile 48703a83-twitter-bootstrap-node twitter-bootstrap-node
+11 verbose addNamed [ 'twitter-bootstrap-node', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 3723eb5d-twitter-bootstrap-node twitter-bootstrap-node@
+14 verbose lock twitter-bootstrap-node@ /home/insomniart/.npm/3723eb5d-twitter-bootstrap-node.lock
+15 silly addNameRange { name: 'twitter-bootstrap-node', range: '*', hasData: false }
+16 verbose request where is /twitter-bootstrap-node
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 53cbb5f59e23757e
+19 verbose url raw /twitter-bootstrap-node
+20 verbose url resolving [ 'https://registry.npmjs.org/', './twitter-bootstrap-node' ]
+21 verbose url resolved https://registry.npmjs.org/twitter-bootstrap-node
+22 verbose request where is https://registry.npmjs.org/twitter-bootstrap-node
+23 info trying registry request attempt 1 at 21:32:08
+24 verbose etag "9ODGRN5HWH4FQ831YJSBW8PM1"
+25 http GET https://registry.npmjs.org/twitter-bootstrap-node
+26 http 304 https://registry.npmjs.org/twitter-bootstrap-node
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Thu, 20 Nov 2014 14:32:24 GMT',
+27 silly registry.get     server: 'Apache',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'last-modified': 'Thu, 20 Nov 2014 14:32:24 GMT',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     etag: '"9ODGRN5HWH4FQ831YJSBW8PM1"',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1416493944.652755,VS0,VE263',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'content-length': '0',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 verbose etag https://registry.npmjs.org/twitter-bootstrap-node from cache
+29 silly addNameRange number 2 { name: 'twitter-bootstrap-node', range: '*', hasData: true }
+30 silly addNameRange versions [ 'twitter-bootstrap-node',
+30 silly addNameRange   [ '0.1.2', '0.1.0-beta', '0.1.1-beta' ] ]
+31 verbose addNamed [ 'twitter-bootstrap-node', '0.1.2' ]
+32 verbose addNamed [ '0.1.2', '0.1.2' ]
+33 silly lockFile c69ff775-twitter-bootstrap-node-0-1-2 twitter-bootstrap-node@0.1.2
+34 verbose lock twitter-bootstrap-node@0.1.2 /home/insomniart/.npm/c69ff775-twitter-bootstrap-node-0-1-2.lock
+35 silly lockFile c69ff775-twitter-bootstrap-node-0-1-2 twitter-bootstrap-node@0.1.2
+36 silly lockFile c69ff775-twitter-bootstrap-node-0-1-2 twitter-bootstrap-node@0.1.2
+37 silly lockFile 3723eb5d-twitter-bootstrap-node twitter-bootstrap-node@
+38 silly lockFile 3723eb5d-twitter-bootstrap-node twitter-bootstrap-node@
+39 silly resolved [ { name: 'twitter-bootstrap-node',
+39 silly resolved     description: 'Twitter Bootstrap for Node.js',
+39 silly resolved     author: { name: 'shinya.takimoto', email: 'shinya.takimoto@gmail.com' },
+39 silly resolved     version: '0.1.2',
+39 silly resolved     bin: { 'twitter-bootstrap': './bin/twitter-bootstrap' },
+39 silly resolved     dependencies: { mkdirp: '0.3.0', 'fs.extra': '' },
+39 silly resolved     keywords: [ 'express', 'genelator', 'twitter', 'bootstrap' ],
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git://github.com/takimo/twitter-bootstrap-node.git' },
+39 silly resolved     engines: { node: '*' },
+39 silly resolved     _npmUser: { name: 'takimo', email: 'subtakimo@gmail.com' },
+39 silly resolved     _id: 'twitter-bootstrap-node@0.1.2',
+39 silly resolved     devDependencies: {},
+39 silly resolved     optionalDependencies: {},
+39 silly resolved     _engineSupported: true,
+39 silly resolved     _npmVersion: '1.1.21',
+39 silly resolved     _nodeVersion: 'v0.6.0',
+39 silly resolved     _defaultsLoaded: true,
+39 silly resolved     dist:
+39 silly resolved      { shasum: '0d46394a7176a47e88ad0451becde6cbcefef53b',
+39 silly resolved        tarball: 'http://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz' },
+39 silly resolved     maintainers: [ [Object] ],
+39 silly resolved     directories: {},
+39 silly resolved     _shasum: '0d46394a7176a47e88ad0451becde6cbcefef53b',
+39 silly resolved     _from: 'twitter-bootstrap-node@',
+39 silly resolved     _resolved: 'https://registry.npmjs.org/twitter-bootstrap-node/-/twitter-bootstrap-node-0.1.2.tgz',
+39 silly resolved     bugs: { url: 'https://github.com/takimo/twitter-bootstrap-node/issues' },
+39 silly resolved     readme: 'ERROR: No README data found!',
+39 silly resolved     homepage: 'https://github.com/takimo/twitter-bootstrap-node' } ]
+40 info install twitter-bootstrap-node@0.1.2 into /usr/local/lib
+41 info installOne twitter-bootstrap-node@0.1.2
+42 verbose lib/node_modules/twitter-bootstrap-node unbuild
+43 verbose tar unpack /home/insomniart/.npm/twitter-bootstrap-node/0.1.2/package.tgz
+44 silly lockFile ba7d2949-e-modules-twitter-bootstrap-node tar:///usr/local/lib/node_modules/twitter-bootstrap-node
+45 verbose lock tar:///usr/local/lib/node_modules/twitter-bootstrap-node /home/insomniart/.npm/ba7d2949-e-modules-twitter-bootstrap-node.lock
+46 silly lockFile 3ac9c144-bootstrap-node-0-1-2-package-tgz tar:///home/insomniart/.npm/twitter-bootstrap-node/0.1.2/package.tgz
+47 verbose lock tar:///home/insomniart/.npm/twitter-bootstrap-node/0.1.2/package.tgz /home/insomniart/.npm/3ac9c144-bootstrap-node-0-1-2-package-tgz.lock
+48 silly gunzTarPerm modes [ '775', '664' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/twitter-bootstrap-node'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/twitter-bootstrap-node']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/twitter-bootstrap-node',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/twitter-bootstrap-node',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:107:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Linux 3.13.0-37-generic
+52 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "twitter-bootstrap-node"
+53 error cwd /var/www/node-neo4j-template
+54 error node -v v0.10.33
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/twitter-bootstrap-node
+57 error fstream_path /usr/local/lib/node_modules/twitter-bootstrap-node
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/twitter-bootstrap-node'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:107:15)
+64 verbose exit [ 3, true ]

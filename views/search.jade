@@ -1,0 +1,46 @@
+extends layout
+
+mixin fof(name)
+
+block body
+	div.page-header
+		h1 Search Users
+
+	- var i = 0
+
+	#user
+	unless users.message 
+		table.table.table-bordered.table-striped.table-hover
+			thead
+				tr
+					th Nama Friend
+					th Many Linking
+			tbody
+			each user, i in users
+				tr
+					td #{users[i]._node.name}
+					td #{users[i]._node.sum}
+	else
+		div.alert.alert-warning #{users.message}
+
+	form.form-inline(action='/users/search', method='POST')
+		input.form-control.search(
+			placeholder='',
+			required=true,
+			name='name',
+			type='text',
+			value=''
+		)
+		&nbsp;
+		select.form-control(name='friend')
+			option(value='1') close friend
+			option(value='2') friend of 2
+			option(value='3') friend of 3
+			option(value='4') friend of 4
+		&nbsp;
+		button.save.btn.btn-primary(
+			type='submit'
+		) Search
+
+
+
